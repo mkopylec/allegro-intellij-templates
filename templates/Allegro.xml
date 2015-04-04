@@ -1,0 +1,400 @@
+<templateSet group="Allegro">
+  <template name="$jget" value="@javax.ws.rs.GET&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    return $VALUE$;&#10;}" description="JAX-RS &quot;get&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$jpost" value="@javax.ws.rs.POST&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;@javax.ws.rs.Consumes(&quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="JAX-RS &quot;post&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$jput" value="@javax.ws.rs.PUT&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;@javax.ws.rs.Consumes(&quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="JAX-RS &quot;put&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$jdel" value="@javax.ws.rs.DELETE&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="JAX-RS &quot;delete&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$sget" value="@org.springframework.web.bind.annotation.RequestMapping(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    return $VALUE$;&#10;}" description="Spring REST &quot;get&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$sdel" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.DELETE)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;delete&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$spost" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;post&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$sput" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.PUT, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;put&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$log" value="private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger($CLASS$.class);" description="New SLF4J logger" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$jresp" value="javax.ws.rs.core.Response.status(javax.ws.rs.core.Response.Status.$STATUS$).entity($ENTITY$).build();" description="Non empty JAX-RS response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="&quot;entity&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$sresp" value="new org.springframework.http.ResponseEntity&lt;&gt;($ENTITY$, org.springframework.http.HttpStatus.$STATUS$);" description="Non empty Spring REST response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY" expression="" defaultValue="&quot;entity&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$jrespe" value="javax.ws.rs.core.Response.status(javax.ws.rs.core.Response.Status.$STATUS$).build();" description="Empty JAX-RS response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$srespe" value="new org.springframework.http.ResponseEntity&lt;&gt;(org.springframework.http.HttpStatus.$STATUS$);" description="Empty Spring REST response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$bprod" value="@org.springframework.context.annotation.Bean&#10;public $RETURN$ $NAME$() {&#10;    return $VALUE$;&#10;}" description="Spring bean producing method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$exh" value="@org.springframework.web.bind.annotation.ResponseStatus(org.springframework.http.HttpStatus.$STATUS$)&#10;@org.springframework.web.bind.annotation.ExceptionHandler($EXCEPTION$.class)&#10;public $RETURN$ handle$EXCEPTION$($EXCEPTION$ ex) {&#10;    return $VALUE$;&#10;}" description="Spring exception handling method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXCEPTION" expression="complete()" defaultValue="&quot;Exception&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$injc" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject Spring component into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Component&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$asp" value="@$ADVICE$(&quot;execution(* *(..)) &amp;&amp; @annotation(annotation)&quot;)&#10;public $RETURN$ $NAME$($ANNOTATION$ annotation) {&#10;    $END$&#10;}" description="Aspect method that intercepts annotated methods" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;intercept&quot;" alwaysStopAt="true" />
+    <variable name="ANNOTATION" expression="complete()" defaultValue="&quot;Annotation&quot;" alwaysStopAt="true" />
+    <variable name="ADVICE" expression="enum(&quot;org.aspectj.lang.annotation.Before&quot;,&quot;org.aspectj.lang.annotation.After&quot;,&quot;org.aspectj.lang.annotation.AfterReturning&quot;,&quot;org.aspectj.lang.annotation.AfterThrowing&quot;,&quot;org.aspectj.lang.annotation.Around&quot;)" defaultValue="&quot;org.aspectj.lang.annotation.Before&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$meth" value="$ACCESS$ $TYPE$ $RETURN$ $NAME$($END$) {&#10;    $VALUE$&#10;}" description="New method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ACCESS" expression="enum(&quot;public&quot;,&quot;protected&quot;,&quot;private&quot;)" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;&quot;,&quot;static&quot;,&quot;final&quot;,&quot;abstract&quot;)" defaultValue="&quot;final&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="enum(&quot;&quot;,&quot;return null;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$injr" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject Spring repository into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Repository&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$injs" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject Spring service into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Service&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$inj" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject object into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$injn" value="@javax.inject.Inject&#10;@javax.inject.Named(&quot;$QUALIFIER$&quot;)&#10;private $TYPE$ $NAME$;" description="Inject named object into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="QUALIFIER" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$val" value="@org.springframework.beans.factory.annotation.Value(&quot;${$PROPERTY$}&quot;)&#10;private $TYPE$ $NAME$;" description="Inject property value into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PROPERTY" expression="" defaultValue="&quot;prop&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$logd" value="$LOGGER$.debug(&quot;$MESSAGE$&quot;$END$);" description="SLF4J debug log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$logi" value="$LOGGER$.info(&quot;$MESSAGE$&quot;$END$);" description="SLF4J info log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$logw" value="$LOGGER$.warn(&quot;$MESSAGE$&quot;$END$);" description="SLF4J warning log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$loge" value="$LOGGER$.error(&quot;$MESSAGE$&quot;$END$);" description="SLF4J error log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$rese" value="$SET$.add($RESOURCE$.class);" description="Add JAX-RS endpoint to resources" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
+    <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.Path&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$resp" value="$SET$.add($RESOURCE$.class);" description="Add JAX-RS provider to resources" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
+    <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.ext.Provider&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+</templateSet>

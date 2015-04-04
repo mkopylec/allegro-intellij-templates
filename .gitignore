@@ -1,0 +1,9 @@
+# Ignore everything
+*
+# But not these files...
+!.gitignore
+!README.md
+!$*.java
+!Allegro.xml
+# ...even if they are in subdirectories
+!*/
