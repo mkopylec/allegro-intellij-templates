@@ -19,7 +19,7 @@ Copy folders *templates* and *fileTemplates* to one of the following location:
 ### Using live templates ###
 
 * Open a Java class file
-* Type Ctrl+J
+* Type Ctrl+J (Code -> Insert Live Template...)
 * Choose one of the templates that starts with **$** sign
 
 Note that you can insert **different live templates** depending on your cursor location (inside or outside of the method)
