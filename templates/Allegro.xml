@@ -73,7 +73,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$sdel" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.DELETE)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;delete&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="$sdel" value="@org.springframework.web.bind.annotation.RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.DELETE)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;delete&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
@@ -87,7 +87,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$spost" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;post&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="$spost" value="@org.springframework.web.bind.annotation.RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.POST, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;post&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
     <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
@@ -102,7 +102,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$sput" value="@RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.PUT, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;put&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="$sput" value="@org.springframework.web.bind.annotation.RequestMapping(value = &quot;$PATH$&quot;, method = org.springframework.web.bind.annotation.RequestMethod.PUT, consumes = &quot;$CONSUMES$&quot;)&#10;public $RETURN$ $NAME$($END$) {&#10;    &#10;}" description="Spring REST &quot;put&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
     <variable name="CONSUMES" expression="complete()" defaultValue="&quot;application/json&quot;" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
@@ -371,7 +371,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$rese" value="$SET$.add($RESOURCE$.class);" description="Add JAX-RS endpoint to resources" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="$rese" value="$SET$.add($RESOURCE$.class);" description="Register JAX-RS endpoint (use in Spring JAX-RS Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
     <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.Path&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <context>
@@ -384,7 +384,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$resp" value="$SET$.add($RESOURCE$.class);" description="Add JAX-RS provider to resources" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <template name="$resp" value="$SET$.add($RESOURCE$.class);" description="Register JAX-RS provider (use in Spring JAX-RS Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
     <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.ext.Provider&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <context>
