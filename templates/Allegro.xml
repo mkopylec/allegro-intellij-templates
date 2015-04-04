@@ -397,4 +397,76 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
+  <template name="$sparp" value="@org.springframework.web.bind.annotation.PathVariable(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="Spring request path parameter method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$jparp" value="@javax.ws.rs.PathParam(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="JAX-RS request path parameter method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$jparq" value="@javax.ws.rs.QueryParam(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="JAX-RS request query parameter method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$jparh" value="@javax.ws.rs.HeaderParam(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="JAX-RS request header method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$jparc" value="@javax.ws.rs.CookieParam(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="JAX-RS request cookie method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$sparq" value="@org.springframework.web.bind.annotation.RequestParam(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="Spring request query parameter method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$sparh" value="@org.springframework.web.bind.annotation.RequestHeader(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="Spring request header method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="$sparc" value="@org.springframework.web.bind.annotation.CookieValue(&quot;$NAME$&quot;) $TYPE$ $NAME$" description="Spring request cookie method arg" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;String&quot;,&quot;int&quot;,&quot;Integer&quot;,&quot;long&quot;,&quot;Long&quot;,&quot;double&quot;,&quot;Double&quot;,&quot;boolean&quot;,&quot;Boolean&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
