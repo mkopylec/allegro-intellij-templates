@@ -31,7 +31,9 @@ public class $NAME {
 
     @Bean(name = "mongoTemplate")
     public MongoTemplate createMongoTemplate() throws UnknownHostException {
-        MongoDbFactory factory = new SimpleMongoDbFactory(new MongoClient(host, port), database, new UserCredentials(username, password));
+        MongoClient mongoClient = new MongoClient(host, port);
+        //TODO Configure additional MongoDB mongoClient settings if needed
+        MongoDbFactory factory = new SimpleMongoDbFactory(mongoClient, database, new UserCredentials(username, password));
         MappingMongoConverter converter = new MappingMongoConverter(new DefaultDbRefResolver(factory), new MongoMappingContext());
         converter.setTypeMapper(new DefaultMongoTypeMapper(null));
 
