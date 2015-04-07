@@ -5,7 +5,7 @@ The repository contains set of live and file templates for IntelliJ IDEA IDE.
 ### Installation ###
 Copy folders *templates* and *fileTemplates* to one of the following location:
 
-* Windows: <your home directory>\\.<product name><version number>\config
+* Windows: \<your home directory\>\\.\<product name\>\<version number\>\config
 * Linux: ~/.<product name><version number>/config
 * OS X: ~/Library/Preferences/<product name><version number>
 
