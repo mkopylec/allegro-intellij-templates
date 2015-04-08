@@ -1,9 +1,9 @@
 # Ignore everything
 *
 # But not these files...
-!.gitignore
-!README.md
-!$*.java
-!Allegro.xml
+!./.gitignore
+!./README.md
+!fileTemplates/$*.java
+!templates/Allegro.xml
 # ...even if they are in subdirectories
 !*/
