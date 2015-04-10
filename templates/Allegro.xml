@@ -371,8 +371,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$rese" value="$SET$.add($RESOURCE$.class);" description="Register JAX-RS endpoint (use in Spring JAX-RS Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
-    <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
+  <template name="$rese" value="register($RESOURCE$.class);" description="Register JAX-RS endpoint (use in Spring Jersey Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.Path&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
@@ -384,8 +383,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="$resp" value="$SET$.add($RESOURCE$.class);" description="Register JAX-RS provider (use in Spring JAX-RS Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
-    <variable name="SET" expression="variableOfType(&quot;java.util.Set&quot;)" defaultValue="&quot;resources&quot;" alwaysStopAt="true" />
+  <template name="$resp" value="register($RESOURCE$.class);" description="Register JAX-RS provider (use in Spring Jersey Resources Config)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="RESOURCE" expression="annotated(&quot;javax.ws.rs.ext.Provider&quot;)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
