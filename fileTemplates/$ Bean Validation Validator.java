@@ -13,7 +13,7 @@ import javax.validation.ConstraintValidatorContext;
 #else
     #set($OBJECT = "ValidatedObjectClass")
 #end
-public class ComparedFieldsValidator implements ConstraintValidator<$ANNOTATION, $OBJECT> {
+public class $NAME implements ConstraintValidator<$ANNOTATION, $OBJECT> {
 
     @Override
     public void initialize($ANNOTATION constraint) {
