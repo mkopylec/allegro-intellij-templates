@@ -13,7 +13,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Documented
 #if ($Validator_class != "")
-@Constraint(validatedBy = ${Validator_class}.class})
+@Constraint(validatedBy = ${Validator_class}.class)
 #else
 @Constraint(validatedBy = ValidatorClass.class)
 #end
