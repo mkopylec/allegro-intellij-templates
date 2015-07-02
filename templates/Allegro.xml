@@ -181,7 +181,7 @@
   </template>
   <template name="$bprod" value="@org.springframework.context.annotation.Bean&#10;public $RETURN$ $NAME$() {&#10;    return $VALUE$;&#10;}" description="Spring bean producing method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
-    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="decapitalize(RETURN)" defaultValue="" alwaysStopAt="false" />
     <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
