@@ -476,4 +476,70 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="$aut" value="@org.springframework.beans.factory.annotation.Autowired&#10;private $TYPE$ $NAME$;" description="Autowire object into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$autc" value="@org.springframework.beans.factory.annotation.Autowired&#10;private $TYPE$ $NAME$;" description="Autowire Spring component into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Component&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$autr" value="@org.springframework.beans.factory.annotation.Autowired&#10;private $TYPE$ $NAME$;" description="Autowire Spring repository into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Repository&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$auts" value="@org.springframework.beans.factory.annotation.Autowired&#10;private $TYPE$ $NAME$;" description="Autowire Spring service into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Service&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$autq" value="@org.springframework.beans.factory.annotation.Autowired&#10;@org.springframework.beans.factory.annotation.Qualifier(&quot;$QUALIFIER$&quot;)&#10;private $TYPE$ $NAME$;" description="Autowire qualified object into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="QUALIFIER" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
 </templateSet>
