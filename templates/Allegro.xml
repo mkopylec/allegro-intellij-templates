@@ -237,7 +237,7 @@
     </context>
   </template>
   <template name="$meth" value="$ACCESS$ $TYPE$ $RETURN$ $NAME$($END$) {&#10;    $VALUE$&#10;}" description="New method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
-    <variable name="ACCESS" expression="enum(&quot;public&quot;,&quot;protected&quot;,&quot;private&quot;)" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
+    <variable name="ACCESS" expression="enum(&quot;public&quot;,&quot;protected&quot;,&quot;private&quot;, &quot;&quot;)" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
     <variable name="TYPE" expression="enum(&quot;&quot;,&quot;static&quot;,&quot;final&quot;,&quot;abstract&quot;)" defaultValue="&quot;final&quot;" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
@@ -532,6 +532,21 @@
     <variable name="QUALIFIER" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
     <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="$field" value="$ACCESS$ $TYPE$ $CLASS$ $NAME$;$END$" description="New field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ACCESS" expression="enum(&quot;public&quot;,&quot;protected&quot;,&quot;private&quot;, &quot;&quot;)" defaultValue="&quot;public&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="enum(&quot;&quot;,&quot;static&quot;,&quot;final&quot;,&quot;static final&quot;)" defaultValue="&quot;final&quot;" alwaysStopAt="true" />
+    <variable name="CLASS" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="false" />
