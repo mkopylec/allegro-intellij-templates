@@ -85,30 +85,30 @@
     <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="ENTITY" expression="" defaultValue="&quot;entity&quot;" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="$sresp" value="new org.springframework.http.ResponseEntity&lt;&gt;($ENTITY$, org.springframework.http.HttpStatus.$STATUS$);" description="Non empty Spring REST response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="ENTITY" expression="" defaultValue="&quot;entity&quot;" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="$jrespe" value="javax.ws.rs.core.Response.status(javax.ws.rs.core.Response.Status.$STATUS$).build();" description="Empty JAX-RS response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="$srespe" value="new org.springframework.http.ResponseEntity&lt;&gt;(org.springframework.http.HttpStatus.$STATUS$);" description="Empty Spring REST response" toReformat="true" toShortenFQNames="true" useStaticImport="true">
     <variable name="STATUS" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="$bprod" value="@org.springframework.context.annotation.Bean&#10;public $RETURN$ $NAME$() {&#10;    return $VALUE$;&#10;}" description="Spring bean producing method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
